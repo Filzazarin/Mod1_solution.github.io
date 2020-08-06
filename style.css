@@ -1,0 +1,96 @@
+body {
+    background-color: brown;
+}
+h1 {
+     text-align: center;
+     color:white;
+     font-size: 50px;
+     
+}
+.container{
+    display: flex;
+
+}
+.box1{
+    border: 1px solid black; 
+    width: 30%;
+    margin:20px ;
+     background-color:grey;
+     font-style: italic;
+     display: flex;
+     flex-flow: row-reverse;
+}
+
+
+.box2{
+    border: 1px solid black;
+    width:30% ;
+    margin:20px ;
+     background-color:yellow;
+     font-style: italic;
+     display: flex;
+     flex-flow: row-reverse;
+}
+
+
+.box3{
+    border: 1px solid black;
+    width: 30%;
+    margin: 20px; 
+    background-color:skyblue;
+    font-style: italic;
+    display: flex;
+    flex-flow: row-reverse;
+}
+.pink{
+    background-color: pink;
+    border: 1px solid black;
+    margin: 0px;
+    height:30px ;
+}
+.red{
+    background-color: red;
+    border: 1px solid black;
+    margin: 0px;
+    height:30px ;
+    color: white;
+    padding: 4px;
+}
+.yellow{
+    background-color:yellow;
+    border:1px solid black;
+    margin: 0px;
+    height:30px ;
+}
+@media (max-width:991px) and (min-width:768px){
+    .box1{
+        width: 40%;
+    }
+    .box2{
+        width: 40%;
+    }
+    .box3{
+        width: 85%;
+    }
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width:767px) {
+    .box1{
+        width: 100%;
+    }
+    .box2{
+        width: 100%;
+    }
+    .box3{
+        width: 100%;
+    }
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
